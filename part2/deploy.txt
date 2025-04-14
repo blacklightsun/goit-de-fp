@@ -1,0 +1,17 @@
+git clone https://github.com/goitacademy/airflow_sandbox.git
+
+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
+
+git remote set-url origin https://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@github.com/goitacademy/airflow_sandbox.git
+
+./encrypt_and_archive.sh v_dags public_key.pem
+
+mv v_dags_encrypted_parts.tar.gz encrypted_file/
+
+git add .
+
+git commit -m "Шифрування файлів та додавання до репозиторію."
+
+git push
+
+
